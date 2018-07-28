@@ -1,0 +1,42 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            <a href="bence.romsics at gmail.com"
+	       rel="nofollow"
+	       onclick="this.href='mailto:' + 'bence.romsics' + '@' + 'gmail.com'">
+	       bence.romsics at gmail.com</a>
+          </li>
+	</ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.social_media_list.linkedin %}
+          <li>
+            {% include icon-linkedin.html username=site.social_media_list.linkedin %}
+          </li>
+          {% endif %}
+
+          {% if site.social_media_list.github %}
+          <li>
+            {% include icon-github.html username=site.social_media_list.github %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

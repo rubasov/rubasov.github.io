@@ -1,0 +1,13 @@
+# Site settings
+title: information loss
+description: personal blog of Bence Romsics
+baseurl: ""
+url: "https://rubasov.github.io"
+timezone: Europe/Budapest
+
+# Build settings
+markdown: kramdown
+
+social_media_list:
+  linkedin: bence-romsics
+  github: rubasov
